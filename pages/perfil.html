@@ -15,25 +15,26 @@
     <div class="perfil">
       <div class="foto-perfil">
         <span>Foto de Perfil</span>
-        <div class="editar"><i class="bi bi-camera"></i></div>
+        <div class="editar"><a href="https://www.google.com.br/?hl=pt-BR" target="blank"><i class="bi bi-camera"></i></a></div>
       </div>
       <div class="nome">
         <input type="text" placeholder="Nome e sobrenome" />
-        <div class="dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+  
       </div>
     </div>
-
     <div class="botoes">
-      <button>Contatos de emergência</button>
+      <button id="cttsEmergencia">Contatos de emergência</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Funcionou</h1>
+        </div>
+      </div>
       <button>Remédios</button>
       <button>Alergias</button>
       <button>Tipo Sanguíneo</button>
     </div>
   </div>
+  <script src="../js/perfil.js"></script>
 </body>
 </html>

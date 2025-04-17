@@ -14,9 +14,10 @@
   
   .container {
     width: 200px;
-    height: 500px;
+    height: 700px;
     background-color:#009b794d;
-    padding-top: 15px;
+    padding-top: 25px;
+    border-radius: 5%;
   }
   
   .perfil {
@@ -56,6 +57,10 @@
     font-size: 12px;
     border: 2px solid white;
   }
+
+  .editar a{
+    color: #00251f;
+  }
   
   .nome {
     flex: 1;
@@ -69,17 +74,10 @@
     border-radius: 4px;
     margin-bottom: 10px;
   }
-  
-  .dots {
-    display: flex;
-    gap: 8px;
-  }
-  
-  .dot {
-    width: 12px;
-    height: 12px;
-    background-color: #00251f;
-    border-radius: 50%;
+
+  .nome input:hover{
+    background-color: #e0e0e0;
+    color: black;
   }
   
   .botoes {
@@ -103,3 +101,38 @@
     background-color: #00251f;
     color: #fefefe;
   }
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
