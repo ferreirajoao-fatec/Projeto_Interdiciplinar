@@ -1,8 +1,105 @@
-nav{
-    background-color: #DEEFE7;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Karla, sans-serif;
+  }
+  
+  body {
+    background-color: #deefe7;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 200px;
+    height: 500px;
+    background-color:#009b794d;
+    padding-top: 15px;
+  }
+  
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .foto-perfil {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #00251f;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .editar {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    background-color: #009b7a;
+    color: black;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border: 2px solid white;
+  }
+  
+  .nome {
+    flex: 1;
+  }
+  
+  .nome input {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #ffffffc7;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .dots {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #00251f;
+    border-radius: 50%;
+  }
+  
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .botoes button {
+    padding: 12px;
+    background-color: #009b7a;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
 
-.btn{
-    background-color: #009B7A;
-    color: rgb(132, 197, 253);
-}
+  .botoes button:hover{
+    background-color: #00251f;
+    color: #fefefe;
+  }
