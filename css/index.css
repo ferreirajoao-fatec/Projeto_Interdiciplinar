@@ -1,118 +1,118 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Karla, sans-serif;
-  }
-  
-  body {
-    background-color: #deefe7;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .container {
-    width: 200px;
-    height: 700px;
-    background-color:#009b794d;
-    padding-top: 25px;
-    border-radius: 5%;
-  }
-  
-  .perfil {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .foto-perfil {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: #00251f;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-    padding: 10px;
-  }
-  
-  .editar {
-    position: absolute;
-    bottom: 0;
-    right: -10px;
-    background-color: #009b7a;
-    color: black;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    border: 2px solid white;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Karla, sans-serif;
+}
 
-  .editar a{
-    color: #00251f;
-  }
-  
-  .nome {
-    flex: 1;
-  }
-  
-  .nome input {
-    width: 100%;
-    padding: 5px 10px;
-    background-color: #ffffffc7;
-    border: none;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
+body {
+  background-color: #deefe7;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
 
-  .nome input:hover{
-    background-color: #e0e0e0;
-    color: black;
-  }
-  
-  .botoes {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .botoes button {
-    padding: 12px;
-    background-color: #009b7a;
-    border: none;
-    border-radius: 2px;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
-  }
+.container {
+  width: 200px;
+  height: 700px;
+  background-color: #009b794d;
+  padding-top: 25px;
+  border-radius: 5%;
+}
 
-  .botoes button:hover{
-    background-color: #00251f;
-    color: #fefefe;
-  }
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.foto-perfil {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #00251f;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.editar {
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  background-color: #009b7a;
+  color: black;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border: 2px solid white;
+}
+
+.editar a {
+  color: #00251f;
+}
+
+.nome {
+  flex: 1;
+}
+
+.nome input {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #ffffffc7;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.nome input:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.botoes button {
+  padding: 12px;
+  background-color: #009b7a;
+  border: none;
+  border-radius: 2px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.botoes button:hover {
+  background-color: #00251f;
+  color: #fefefe;
+}
 
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -120,7 +120,7 @@
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; 
+  width: 80%;
 }
 
 .close {
@@ -135,4 +135,11 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.cttsTabela td{
+  border: 1px #00251f;
+  border-radius: 10%;
+  padding: 15px;
+  justify-content: space-between;
 }
