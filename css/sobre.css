@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --font-principal:"Montserrat";
+    --dark-blue: #00251F;
+    --teal-green: #009B7A;
+    --light-gray-blue: #B4BEC9;
+    --mint-cream: #DEEFE7;
+    --light-gray: #F1F1F1;
+  }
+  
+
+body{
+    background-color: var(--light-gray);
+}
+
+.div-info{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--teal-green);
+}
+
+.section-info{
+    padding: 20px;
+    background-color: var(--light-gray-blue);
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3{
+    text-align: center;
+    color: var(--dark-blue);    
+    padding:10px;
+    font-size: 20px;
+}
+
+h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.p-info{
+    text-align: justify;
+    font-size: 15px;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+.imagem-info{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
