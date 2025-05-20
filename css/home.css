@@ -1,0 +1,418 @@
+/* Importação das fontes do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Declaração de variáveis de cor e fonte */
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Karla", sans-serif;
+  --tertiary-font: "Spectral", serif;
+  --Color-dark-blue: #00251f;
+  --Color-teal-green: #009b7a;
+  --Color-ligth-gray-blue: #b4bec9;
+  --Color-mint-cream: #deefe7;
+  --Color-light-gray: #f1f1f1;
+}
+
+body {
+  background-color: var(--Color-light-gray);
+  font-family: var(--main-font);
+  min-height: 100vh;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+main {
+  padding: 0 30px;
+}
+
+/* Navbar do site */
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Color-light-gray);
+  display: flex;
+  padding: 20px 0;
+}
+
+.navbar-logo {
+  width: 50px;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.navbar-item {
+  color: var(--Color-dark-blue);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-item:hover {
+  border-bottom: 2px solid var(--Color-teal-green);
+  padding-bottom: 7px;
+}
+
+.navbar-btn {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.navbar-btn-item {
+  text-decoration: none;
+  color: var(--Color-dark-blue);
+  background-color: var(--Color-teal-green);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-btn-item:hover {
+  color: var(--Color-mint-cream);
+  background-color: var(--Color-dark-blue);
+}
+
+.navbar-btn-profile {
+  font-size: 21px;
+  color: var(--Color-teal-green);
+}
+
+.navbar-btn-profile:hover {
+  color: var(--Color-dark-blue);
+}
+
+.div-header {
+  display: flex;
+  background-color: var(--Color-light-gray);
+  font-size: 16px;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.section-header {
+  max-width: 750px;
+  padding: 10px 0;
+}
+
+.title-header {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: var(--Color-dark-blue);
+  text-align: left;
+  padding: 8px 0;
+  font-family: var(--tertiary-font);
+}
+
+.title-header span {
+  color: var(--Color-teal-green);
+}
+
+.text-header {
+  text-align: left;
+  font-size: 16px;
+  padding: 8px 0;
+  padding-right: 30px;
+}
+
+.btn-header {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.btn-header-item-1 {
+  text-decoration: none;
+  color: var(--Color-dark-blue);
+  padding: 7px 20px;
+  font-size: 16px;
+  border: 1px solid var(--Color-teal-green);
+  border-radius: 10px;
+}
+
+.btn-header-item-1:hover,
+.btn-header-item-2:hover {
+  background-color: var(--Color-teal-green);
+  color: var(--Color-light-gray);
+}
+
+.btn-header-item-2 {
+  text-decoration: none;
+  color: var(--Color-dark-blue);
+  padding: 7px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--Color-teal-green);
+}
+
+.image-header {
+  width: 100%;
+  max-width: 500px;
+  height: 420px;
+  background-image: url(../imagens/Fundo-Circulo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-info {
+  display: flex;
+}
+
+.header-number {
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header-info-text {
+  font-size: 16px;
+  text-align: left;
+}
+
+.div-info-home {
+  display: flex;
+  gap: 20px;
+}
+
+/* Importação das fontes do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Declaração de variáveis de cor e fonte */
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Karla", sans-serif;
+  --tertiary-font: "Spectral", serif;
+  --Color-dark-blue: #00251f;
+  --Color-teal-green: #009b7a;
+  --Color-ligth-gray-blue: #b4bec9;
+  --Color-mint-cream: #deefe7;
+  --Color-light-gray: #f1f1f1;
+}
+
+body {
+  background-color: var(--Color-light-gray);
+  font-family: var(--main-font);
+  min-height: 100vh;
+}
+
+main {
+  padding: 0 30px;
+}
+
+
+.title-testimonial {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.content-info {
+  display: flex;
+  gap: 40px;
+  padding: 30px 0;
+  justify-content: center;
+}
+
+.card-info {
+  background-color: var(--Color-light-gray);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 350px;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(78, 78, 78, 0.1);
+}
+
+.icon-wrapper {
+  background-color: var(--Color-mint-cream);
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  color: var(--Color-teal-green);
+}
+
+.icon-wrapper:hover {
+  background-color: var(--Color-teal-green);
+  color: var(--Color-light-gray);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.title-info {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.text-info {
+  text-align: left;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.content-testimonial {
+  display: flex;
+  gap: 40px;
+  padding: 30px 0;
+  justify-content: center;
+}
+
+.card-testimonial {
+  background-color: var(--Color-light-gray);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: auto;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(78, 78, 78, 0.1);
+}
+
+.card-quote {
+  font-size: 35px;
+  position: relative;
+  right: 40%;
+  color: var(--Color-teal-green);
+  top: 2%;
+}
+
+.card-quote:hover {
+  color: var(--Color-dark-blue);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.team-divider {
+  height: 2px;
+  width: 120px;
+  background: var(--Color-teal-green);
+  border-radius: 20px;
+  border: none;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.testimonial-start {
+  padding: 5px 0;
+}
+
+.card-text {
+  font-size: 16px;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.testimonial-start {
+  color: var(--Color-teal-green);
+  font-size: 15px;
+}
+
+
+/* Rodapé do site */
+.footer {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  background-color: var(--Color-teal-green);
+  display: flex;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: var(--Color-dark-blue);
+  color: var(--Color-light-gray);
+  border-radius: 50%;
+  font-size: 19px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-social-link:hover {
+  background-color: var(--Color-ligth-gray-blue);
+  color: var(--Color-dark-blue);
+}
+
+.footer-menu {
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.footer-item {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--Color-light-gray);
+}
+
+.footer-link:hover {
+  border-bottom: 2px solid var(--Color-dark-blue);
+  padding-bottom: 6px;
+  color: var(--Color-ligth-gray-blue);
+}
+
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  background-color: var(--Color-dark-blue);
+  color: var(--Color-light-gray);
+}
+
+.text-copyright {
+  padding: 20px;
+}
