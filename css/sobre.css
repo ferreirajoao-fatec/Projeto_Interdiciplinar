@@ -9,19 +9,20 @@
 
 /* Declaração de variáveis de cor e fonte */
 :root {
-  --main-font: "Montserrat", sans-serif;
-  --secondary-font: "Karla", sans-serif;
-  --tertiary-font: "Spectral", serif;
-  --Color-dark-blue: #00251f;
-  --Color-teal-green: #009b7a;
-  --Color-ligth-gray-blue: #b4bec9;
-  --Color-mint-cream: #deefe7;
-  --Color-light-gray: #f1f1f1;
+  --fonte-montserrat: "Montserrat", sans-serif;
+  --fonte-karla: "Karla", sans-serif;
+  --fonte-spectral: "Spectral", serif;
+  --color-preto: #00251f;
+  --cor-verde-escuro: #009b7a;
+  --cor-verde-medio: #009b794d;
+  --cor-cinza: #b4bec9;
+  --cor-verde-claro: #deefe7;
+  --cor-branco: #f1f1f1;
 }
 
 body {
-  background-color: var(--Color-light-gray);
-  font-family: var(--main-font);
+  background-color: var(--cor-branco);
+  font-family: var(--fonte-montserrat);
   min-height: 100vh;
   line-height: 1.5;
   letter-spacing: 0.5px;
@@ -35,7 +36,7 @@ main {
 .navbar {
   align-items: center;
   justify-content: space-between;
-  background-color: var(--Color-light-gray);
+  background-color: var(--cor-branco);
   display: flex;
   padding: 20px 0;
 }
@@ -51,13 +52,13 @@ main {
 }
 
 .navbar-item {
-  color: var(--Color-dark-blue);
+  color: var(--color-preto);
   text-decoration: none;
   font-size: 16px;
 }
 
 .navbar-item:hover {
-  border-bottom: 2px solid var(--Color-teal-green);
+  border-bottom: 2px solid var(--cor-verde-escuro);
   padding-bottom: 7px;
 }
 
@@ -69,8 +70,8 @@ main {
 
 .navbar-btn-item {
   text-decoration: none;
-  color: var(--Color-dark-blue);
-  background-color: var(--Color-teal-green);
+  color: var(--color-preto);
+  background-color: var(--cor-verde-escuro);
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -80,22 +81,22 @@ main {
 }
 
 .navbar-btn-item:hover {
-  color: var(--Color-mint-cream);
-  background-color: var(--Color-dark-blue);
+  color: var(--cor-branco);
+  background-color: var(--color-preto);
 }
 
 .navbar-btn-profile {
   font-size: 21px;
-  color: var(--Color-teal-green);
+  color: var(--cor-verde-escuro);
 }
 
 .navbar-btn-profile:hover {
-  color: var(--Color-dark-blue);
+  color: var(--color-preto);
 }
 
 .div-header {
   display: flex;
-  background-color: var(--Color-light-gray);
+  background-color: var(--cor-branco);
   font-size: 16px;
   width: 100%;
   padding: 20px 0;
@@ -110,14 +111,14 @@ main {
 .title-header {
   text-transform: uppercase;
   font-size: 60px;
-  color: var(--Color-dark-blue);
+  color: var(--color-preto);
   text-align: left;
   padding: 8px 0;
-  font-family: var(--tertiary-font);
+  font-family: var(--fonte-spectral);
 }
 
 .title-header span {
-  color: var(--Color-teal-green);
+  color: var(--cor-verde-escuro);
 }
 
 .text-header {
@@ -131,7 +132,7 @@ main {
   width: 100%;
   max-width: 500px;
   height: 450px;
-  background-image: url(../imagens/fundo-circulo.svg);
+  background-image: url(/imagens/fundo-circulo.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,7 +152,7 @@ main {
 }
 
 .card-info {
-  background-color: var(--Color-light-gray);
+  background-color: var(--cor-branco);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -160,20 +161,20 @@ main {
   padding: 20px;
   width: 350px;
   height: auto;
-  box-shadow: 0 4px 12px rgba(78, 78, 78, 0.1);
+  box-shadow: 0 4px 12px #00251f23;
 }
 
 .icon-wrapper {
-  background-color: var(--Color-mint-cream);
-  padding: 20px;
+  background-color: var(--cor-verde-claro);
+  padding: 10px 20px;
   font-size: 30px;
   border-radius: 10px;
-  color: var(--Color-teal-green);
+  color: var(--cor-verde-escuro);
 }
 
 .icon-wrapper:hover {
-  background-color: var(--Color-teal-green);
-  color: var(--Color-light-gray);
+  background-color: var(--cor-verde-escuro);
+  color: var(--cor-branco);
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -200,7 +201,7 @@ main {
 }
 
 .card-team {
-  background-color: var(--Color-light-gray);
+  background-color: var(--cor-branco);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -208,7 +209,7 @@ main {
   justify-content: center;
   width: 350px;
   height: auto;
-  box-shadow: 0 4px 12px rgba(78, 78, 78, 0.1);
+  box-shadow: 0 4px 12px #00251f23;
   padding: 20px;
 }
 
@@ -223,7 +224,7 @@ main {
 .team-divider {
   height: 2px;
   width: 120px;
-  background: var(--Color-teal-green);
+  background: var(--cor-verde-escuro);
   border-radius: 20px;
   border: none;
   margin-top: 8px;
@@ -239,7 +240,7 @@ main {
 
 .card-team-text {
   font-size: 16px;
- text-align: center;
+  text-align: center;
   padding: 5px 0;
 }
 
@@ -257,8 +258,8 @@ main {
   width: 40px;
   height: 40px;
   margin: 5px;
-  background-color: var(--Color-teal-green);
-  color: var(--Color-light-gray);
+  background-color: var(--cor-verde-escuro);
+  color: var(--cor-branco);
   border-radius: 50%;
   font-size: 19px;
   text-decoration: none;
@@ -266,8 +267,8 @@ main {
 }
 
 .team-social-link:hover {
-  background-color: var(--Color-dark-blue);
-  color: var(--Color-ligth-gray-blue);
+  background-color: var(--color-preto);
+  color: var(--cor-cinza);
 }
 
 /* Rodapé do site */
@@ -276,7 +277,7 @@ main {
   align-items: center;
   flex-direction: column;
   padding: 15px;
-  background-color: var(--Color-teal-green);
+  background-color: var(--cor-verde-escuro);
   display: flex;
 }
 
@@ -294,8 +295,8 @@ main {
   width: 40px;
   height: 40px;
   margin: 5px;
-  background-color: var(--Color-dark-blue);
-  color: var(--Color-light-gray);
+  background-color: var(--color-preto);
+  color: var(--cor-branco);
   border-radius: 50%;
   font-size: 19px;
   text-decoration: none;
@@ -303,8 +304,8 @@ main {
 }
 
 .footer-social-link:hover {
-  background-color: var(--Color-ligth-gray-blue);
-  color: var(--Color-dark-blue);
+  background-color: var(--cor-cinza);
+  color: var(--color-preto);
 }
 
 .footer-menu {
@@ -320,20 +321,20 @@ main {
 
 .footer-link {
   text-decoration: none;
-  color: var(--Color-light-gray);
+  color: var(--cor-branco);
 }
 
 .footer-link:hover {
-  border-bottom: 2px solid var(--Color-dark-blue);
+  border-bottom: 2px solid var(--color-preto);
   padding-bottom: 6px;
-  color: var(--Color-ligth-gray-blue);
+  color: var(--cor-cinza);
 }
 
 .copyright {
   text-align: center;
   font-size: 16px;
-  background-color: var(--Color-dark-blue);
-  color: var(--Color-light-gray);
+  background-color: var(--color-preto);
+  color: var(--cor-branco);
 }
 
 .text-copyright {
