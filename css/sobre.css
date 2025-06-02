@@ -204,7 +204,7 @@ body {
 .icon-wrapper {
   background-color: var(--cor-verde-claro);
   padding: 10px 20px;
-  font-size: 30px;
+  font-size: 35px;
   border-radius: 10px;
   color: var(--cor-verde-escuro);
 }
