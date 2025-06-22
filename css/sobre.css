@@ -37,6 +37,18 @@ body {
   padding: 20px 30px;
 }
 
+.logotipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logotipo p {
+  font-size: 19px;
+  margin-left: 10px;
+  font-family: var(--fonte-karla);
+}
+
 .navbar-logo {
   width: 50px;
 }
@@ -89,7 +101,6 @@ body {
 .navbar-btn-profile:hover {
   color: var(--cor-preto);
 }
-
 
 /* Navbar geral (mobile) */
 
@@ -378,10 +389,13 @@ body {
   padding: 20px;
 }
 
-
 @media (max-width: 532px) {
   .nav-items {
     font-size: 14px;
+  }
+
+  .logotipo p {
+    font-size: 16px;
   }
 
   .div-header {
@@ -467,13 +481,12 @@ body {
     padding: 15px;
   }
 
-  .title{
+  .title {
     padding: 8px 15px;
   }
 }
 
-
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .navbar-list,
   .navbar-btn-item {
     display: none;
@@ -487,7 +500,6 @@ body {
     display: block;
   }
 }
-
 
 @media (max-width: 915px) {
   .div-header {
