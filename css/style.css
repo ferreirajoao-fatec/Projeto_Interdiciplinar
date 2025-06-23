@@ -77,3 +77,7 @@
     background-color: #e0f2fe;
   }
   
+  button[type="button"] {
+    background-color: #009B7A;
+    color: white;
+  }
