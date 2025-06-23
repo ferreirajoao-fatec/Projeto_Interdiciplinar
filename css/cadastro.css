@@ -6,6 +6,7 @@ body{
     padding-block: 0.1px;
     align-items: center;
     text-align: center;
+    min-height: 100vh;
 }
 .cadastro-container{
     background-color: white;
