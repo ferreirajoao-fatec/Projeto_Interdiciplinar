@@ -5,10 +5,6 @@
   font-family: Karla, sans-serif;
 }
 
-.nav{
-  border-radius: 8px;
-}
-
 body {
   background-color: #deefe7;
   display: flex;
