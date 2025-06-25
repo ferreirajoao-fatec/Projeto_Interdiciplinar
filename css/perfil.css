@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: Karla, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -14,11 +16,12 @@ body {
 
 .container {
   width: 200px;
-  height: 700px;
+  height: 525px;
   background-color: #009b794d;
   padding-top: 25px;
-  border-radius: 5%;
+  border-radius: 15px;
 }
+
 
 .perfil {
   display: flex;
@@ -72,7 +75,7 @@ body {
   padding: 5px 10px;
   background-color: #ffffffc7;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
 
@@ -91,11 +94,11 @@ body {
   padding: 12px;
   background-color: #009b7a;
   border: none;
-  border-radius: 2px;
   color: black;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
 .botoes button:hover {
@@ -122,6 +125,7 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  display: flex;
 }
 
 .close {
@@ -144,7 +148,7 @@ body {
   margin: 20px auto;
   border-collapse: separate;
   border-spacing: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   background-color: #F1F1F1;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -180,11 +184,15 @@ body {
   background-color: #e6f7f0;
   padding: 20px;
   border-radius: 15px;
-  max-width: 700px;
-  font-family: Arial, sans-serif;
+  width: 800px;
   display: flex;
   gap: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-perfil{
+  display: flex;
+  justify-content: center;
 }
 
 .coluna {
