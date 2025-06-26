@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulário Medtrack</title>
-<link rel="shortcut icon" href="../imagens/logo.svg" type="image/x-icon">
-<link rel="stylesheet" href="../css/formulario.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Medtrack</title>
+    <link rel="shortcut icon" href="../imagens/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/formulario.css">
 </head>
+
 <body>
 
 
-<form action="#" method="POST">
-<h1>Formulário</h1>
-    <label for="nome">Nome Completo:</label>
-<input type="text" id="nome" name="nome" placeholder="Digite seu nome completo.">
+    <form action="#" method="POST">
+        <h1>Formulário</h1>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo.">
 
-<label for="idade">Idade:</label>
-<input type="number" id="idade" name="idade" min="0" placeholder="Digite sua idade.">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0" placeholder="Digite sua idade.">
 
-<label for="email">E-mail:</label>
-<input type="email" id="email" name="email" placeholder="Digite seu e-mail.">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail.">
 
-<label for="tipoSanguineo">Tipo Sanguíneo:</label>
-<select id="tipoSanguineo" name="tipoSanguineo">
-<option value="" disabled selected>Selecione seu tipo sanguíneo</option>
-<option value="A+">A+</option>
-<option value="A-">A-</option>
-<option value="B+">B+</option>
-<option value="B-">B-</option>
-<option value="AB+">AB+</option>
-<option value="AB-">AB-</option>
-<option value="O+">O+</option>
-<option value="O-">O-</option>
-</select>
+        <label for="tipoSanguineo">Tipo Sanguíneo:</label>
+        <select id="tipoSanguineo" name="tipoSanguineo">
+            <option value="" disabled selected>Selecione seu tipo sanguíneo</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
 
-<label for="medicamento">Medicamento (Nome):</label>
-<input type="text" id="medicamento" name="medicamento" placeholder="Digite o nome do medicamento.">
+        <label for="medicamento">Medicamento (Nome):</label>
+        <input type="text" id="medicamento" name="medicamento" placeholder="Digite o nome do medicamento.">
 
-<label for="dosagem">Dosagem:</label>
-<input type="text" id="dosagem" name="dosagem" placeholder="Digite a dosagem do medicamento.">
+        <label for="dosagem">Dosagem:</label>
+        <input type="text" id="dosagem" name="dosagem" placeholder="Digite a dosagem do medicamento.">
 
-<label for="endereco">Local de Moradia:</label>
-<textarea id="endereco" name="endereco" rows="4" placeholder="Digite seu endereço completo."></textarea>
+        <label for="endereco">Local de Moradia:</label>
+        <textarea id="endereco" name="endereco" rows="4" placeholder="Digite seu endereço completo."></textarea>
 
-<button type="button" id="cad" onclick="window.location.href='../pages/home.html';">Enviar</button>
-<button type="button" id="volt" onclick="window.location.href='../pages/home.html';">Voltar</button>
-</form>
+        <button type="button" id="cad" onclick="window.location.href='../pages/home.html';">Enviar</button>
+        <button type="button" id="volt" onclick="window.location.href='../pages/home.html';">Voltar</button>
+    </form>
 
 </body>
+
 </html>
