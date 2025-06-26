@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MedTrack - Login</title>
-  <link rel="stylesheet" href="../css/style.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Medtrack</title>
+<link rel="shortcut icon" href="../imagens/logo.svg" type="image/x-icon">
+<link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-  <div class="container">
-    <div class="login-box">
-      <h1>MedTrack</h1>
-      <form id="login-form">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" required />
+<div class="container">
+<div class="login-box">
+<h1>MedTrack</h1>
+<form id="login-form">
+<label for="email">E-mail:</label>
+<input type="email" id="email" required placeholder="Digite o seu e-email.">
 
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" required />
+<label for="senha">Senha:</label>
+<input type="password" id="senha" required placeholder="Digite a sua senha.">
 
-        <button type="button" onclick="window.location.href='home.html'">Entrar</button>
-        <button type="button" class="secondary" onclick="window.location.href='cadastro.html'">Cadastrar</button>
-      </form>
-    </div>
-  </div>
+<button type="button" class="primary" onclick="window.location.href='../pages/home.html'">Entrar</button>
+<button type="button" class="secondary" onclick="window.location.href='../pages/cadastro.html'">Cadastrar</button>
+</form>
+</div>
+</div>
 
 </body>
 </html>

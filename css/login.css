@@ -1,101 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
 body {
   background-color: #009b7a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
   padding: 20px;
 }
 
-/* Estilo do título */
-h1 {
-  text-align: center;
-  color: #009b7a;
-  margin: 15px 0;
-}
-
-/* Estilo do formulário */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
+.login-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo dos rótulos */
-label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
-  color: #333;
+.login-box h1 {
+  text-align: center;
+  color: #009b7a;
+  margin-bottom: 25px;
 }
 
-/* Estilo dos campos de entrada */
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="time"],
-select,
-textarea {
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+  padding: 12px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo da área de texto */
-textarea {
-  resize: vertical;
-}
-
-/* Estilo do botão */
-button {
-  display: block;
+form button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 1rem;
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.5s ease;
   border: 2px solid transparent;
 }
 
-#cad,
+button.primary,
 form button[type="submit"] {
   background-color: #009b7a;
   color: white;
-  margin-top: 10px;
 }
 
-#cad:hover,
+button.primary:hover,
 form button[type="submit"]:hover {
   background-color: transparent;
   border-color: #009b7a;
   color: #00251f;
 }
 
-#volt,
+button.secondary,
 form button[type="submit"] {
   background-color: #009b7a;
   color: white;
-  margin-top: 15px;
 }
 
-#volt:hover,
+button.secondary:hover,
 form button[type="submit"]:hover {
   background-color: transparent;
   border-color: #009b7a;
   color: #00251f;
 }
+

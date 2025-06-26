@@ -1,70 +1,104 @@
-body{
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom right, rgb(26, 204, 100), rgb(16, 110, 136) );
-    justify-content: center;
-    display: flex;
-    padding-block: 0.1px;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-.cadastro-container{
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    width: 350px;
-    height: 600px;
+
+body {
+  background-color: #009b7a;
+  justify-content: center;
+  display: flex;
+  padding-block: 0.1px;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
-h1{
-    text-align: center;
-    color: #009b7a;
+
+.cadastro-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: auto;
 }
-input{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    align-items: center;
+
+h1 {
+  text-align: center;
+  color: #009b7a;
 }
-label{
-    text-align: left;
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin-top: 5px;
 }
-#sub{
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(0, 153, 255);
+
+label {
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
-#cad{
-    width: 100%;
-    padding: 12px;
-    background-color: #009B7A;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 16px;
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 2px solid transparent;
 }
-p{
-    font-weight: 500;
+
+#cad,
+form button[type="submit"] {
+  background-color: #009b7a;
+  color: white;
+  margin-top: 20px;
 }
-#volt{
-    width: 100%;
-    padding: 12px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 16px;
+
+#cad:hover,
+form button[type="submit"]:hover {
+  background-color: transparent;
+  border-color: #009b7a;
+  color: #00251f;
 }
-a:hover{
-  color: aqua;
+
+#volt,
+form button[type="submit"] {
+  background-color: #009b7a;
+  color: white;
+  margin-top: 15px;
+}
+
+#volt:hover,
+form button[type="submit"]:hover {
+  background-color: transparent;
+  border-color: #009b7a;
+  color: #00251f;
+}
+
+.aqui {
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.aqui a {
+  color: #009b7a;
+  text-decoration: none;
+}
+
+.aqui a:hover {
+  text-decoration: underline;
 }
