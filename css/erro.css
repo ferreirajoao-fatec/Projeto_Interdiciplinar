@@ -1,0 +1,112 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap; /* permite quebra natural */
+}
+
+/* Texto */
+.text {
+  flex: 1 1 500px; /* ocupa espaço mas pode encolher */
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4.5rem); /* fluido */
+  font-weight: 700;
+  line-height: 1.2;
+  color: #00251F;
+  margin-bottom: 25px;
+}
+
+/* Botão voltar */
+.img2 {
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #009B7A;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn:hover {
+  background: #007a62;
+}
+
+/* Imagem principal (404) */
+.image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%; /* se adapta ao container */
+  height: auto;    /* mantém proporção */
+}
+
+/* Versão Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse; /* imagem embaixo e texto em cima */
+    text-align: center;
+    gap: 25px;
+  }
+
+  .text {
+    flex: 1 1 auto;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .image img {
+    max-width: 260px;
+  }
+}
